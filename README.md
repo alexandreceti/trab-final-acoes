@@ -17,7 +17,7 @@ Alexandre Oliveira
 Iniciar o rabbitmq  
 docker run -d --hostname rabbitmq --name rabbitmq-management -p 15672:15672 -p 5671:5671 -p 5672:5672 rabbitmq:management  
 
-Iniciar o moongodb
+Iniciar o moongodb  
 docker run -p 27017:27017 --name mongodb -d mongo  
 
 Configurar o e-mail na classe "EmailConfig" e "EmailSender":
