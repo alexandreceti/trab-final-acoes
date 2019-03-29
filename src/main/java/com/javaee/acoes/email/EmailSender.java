@@ -5,9 +5,9 @@ import com.javaee.acoes.email.EmailConfig;
 public class EmailSender {
 	
 	public static void main(String[] args) {
-		final String fromEmail = "alexandrecunha.eti@gmail.com";
-		final String password = "sumppujrnpgiprnf";
-		final String toEmail = "alexandrecunha.eti@gmail.com";
+		final String fromEmail = "alexandre@example.com";
+		final String password = "senha";
+		final String toEmail = "alexandre@example.com";
 		
 		System.out.println("Initializing email send");
 		

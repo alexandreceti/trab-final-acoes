@@ -1,5 +1,7 @@
 package com.javaee.acoes.domain;
 
+import java.util.UUID;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,8 +13,7 @@ import lombok.Setter;
 @Document
 public class Cliente {
 	@Id
-	private String id;
-	//private String id = UUID.randomUUID().toString();
+	private String id = UUID.randomUUID().toString();
 	private String name;
 	private String email;
 	

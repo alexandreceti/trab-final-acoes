@@ -60,8 +60,8 @@ public class EmailConfig {
 	
 	private void configContent(String toEmail, String subject, String body, MimeMessage message) {
 		try {
-			message.setFrom(new InternetAddress("alexandrecunha.eti@gmail.com", "Example"));
-			message.setReplyTo(InternetAddress.parse("alexandrecunha.eti@gmail.com", false));
+			message.setFrom(new InternetAddress("alexandre@example.com", "Example"));
+			message.setReplyTo(InternetAddress.parse("alexandre@example.com", false));
 			message.setSubject(subject, "UTF-8");
 			message.setText(body, "UTF-8");
 			message.setSentDate(new Date());

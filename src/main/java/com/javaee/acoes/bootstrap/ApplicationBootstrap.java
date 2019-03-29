@@ -49,11 +49,13 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
 	
 	private void loadCliente() {
 		Cliente cl1 = new Cliente();
+		cl1.setId("410477c6-2557-44f7-be0d-4d02843dbf66");
 		cl1.setName("Alexandre Oliveira");
 		cl1.setEmail("alexandre@example.com");
 		clienteRepository.save(cl1);
 
 		Cliente cl2 = new Cliente();
+		cl2.setId("8b533ab1-7621-4c29-9fbb-5fb8e972f52b");
 		cl2.setName("lucas");
 		cl2.setEmail("lucas@example.com");
 		clienteRepository.save(cl2);
@@ -62,6 +64,7 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
 	
 	private void loadEmpresa() {
 		Empresa emp1 = new Empresa();
+		emp1.setId("febdab88-3d7b-45e4-8777-2cd607e54e4d");
 		emp1.setName("OLX");
 		emp1.setEmail("olx@example.com");
 		Empresa acaoEmp1 = empresaRepository.save(emp1);
@@ -78,6 +81,7 @@ public class ApplicationBootstrap implements ApplicationListener<ContextRefreshe
 		acaoRepository.save(acao1);
 
 		Empresa emp2 = new Empresa();
+		emp2.setId("33eac20d-cb16-48a1-abe6-f3fec3688f7d");
 		emp2.setName("PucMinas");
 		emp2.setEmail("pucminas@example.com");
 		Empresa acaoEmp2 = empresaRepository.save(emp2);
